@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+         .hor-nav{
+             background-color:gray;
+            margin:0;
+            padding: 0;
+            width:10%;
+            height: 100%;
+            position:fixed;
+            list-style-type: none;
+            float:left;
+         }
+         .hor-nav a{
+            display: block;
+             text-decoration: none;
+            padding:20px 10px;
+             font-size: 20px;
+         }
+         .hor-nav a:hover{
+             background-color: black;
+             border-left:solid 4px red ;
+         }
+        /* .grid-container{
+             display:grid;
+             grid-template-columns:auto;
+             grid-template-rows:800px 500px 500px 800px;
+             gap:50px;
+             background-color: brown;
+             
+         }*/
+         .grid-container{
+             display: flex;
+             flex-flow:column nowrap;
+             align-content:space-between ;
+             background-color: brown;
+         }
+         .grid-container div{
+             background-color: aquamarine;
+             text-align: center;
+             font-size: 30px;
+         }
+        </style>
+
+    </head>
+
+    <body style="margin:o;">
+     <ul class="hor-nav">
+         <li><img src="img/cry.jpg" height=150px width=100%></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#song">Songs</a></li>
+         <li><a href="#movie">Movies</a></li>
+         <li><a href="#anime">Anime</a></li>
+         <li><a href="#more">More</a></li>
+     </ul>
+
+     <div class="grid-container">
+    
+         <div id="about">
+            Introduce
+         </div>
+         
+         <div id="song">
+            Songs
+         </div>
+         
+         <div id="movie">
+            Movies
+         </div>
+         
+         <div id="anime">
+            Anime
+         </div>
+         <div id="more">
+            More
+         </div>
+     </div>
+
+
+
+     </body>
+ 
+</html>
