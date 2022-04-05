@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        .container{
+            display:flex;
+            background-color: aqua;
+            flex-direction: row;
+            justify-content: space-between;
+            margin:0;
+            
+        }
+        .nav{
+            background-color: antiquewhite;
+            height: 100%;
+            position:fixed;
+            width: 200px;
+            margin: 0;
+        }
+        .main{
+            display: flex;
+            width: 87%;
+            height: 720px;
+            position: relative;
+            left:200px;
+            flex-direction: row;
+            background-color: aquamarine;
+        }
+        .myimg{
+            flex:40%;
+            background-color: rgb(128, 85, 85);
+        }
+        .intro{
+            flex:60%;
+            background-color: cadetblue;
+        }
+        .explore_container{
+            display: flex;
+            background-color: burlywood;
+            position: relative;
+            left:200px;
+            padding:0px;
+            height: 300px;
+            width:87%;
+        }
+        .explore_container_items{
+            flex:30%;
+            background-color: cornflowerblue;
+            margin:20px;
+        }
+        .song_container{
+            display: grid;
+           grid-template-columns: 100%;
+           grid-template-rows: 100px 100px 500px;
+            background-color: darkblue;
+            width: 87%;
+            margin:0 0 0 200px;
+            gap:30px 0;
+        }
+        .song_items{
+            background-color: rgb(100, 247, 134);
+            padding:20px;
+        }
+        .song_nav{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: aliceblue;
+            height: 100%;
+
+        }
+    
+    </style>
+    </head>
+    <body>
+  <div class="container">
+          <div class="nav">
+              nav
+          </div>
+
+    <div class="main">
+          <div class="intro">
+              intro
+          </div>
+          <div class="myimg">
+             img
+          </div>
+     </div>
+  </div>
+      <div class="explore_container">     
+              <h1>Explore</h1>
+          <div class="explore_container_items">
+              Songs
+          </div>
+          <div class="explore_container_items">
+            Books
+        </div>
+        <div class="explore_container_items">
+            Anime
+        </div>
+        <div class="explore_container_items">
+            Movies
+        </div>
+        <div class="explore_container_items">
+            More
+        </div>
+      </div>
+      <div class="song_container">
+         <div class="song_items">
+          header
+         </div>
+
+           <div class="song_items">
+
+            <div class="song_nav">
+             <div>Romantic</div>
+             <div>Old</div>
+             <div>Lofi</div>
+             <div>Party</div>
+             <div>English</div>
+            </div>
+
+           </div>
+           <div class="song_items">
+           Spotify
+           </div>
+      </div>
+    </body>
+</html>
