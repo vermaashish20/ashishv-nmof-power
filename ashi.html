@@ -20,7 +20,24 @@
             position:fixed;
             width: 200px;
             margin: 0;
+            z-index: 10;
         }
+        .nav a{
+            font-size: 30px;
+            margin: 20px;
+            background-color: rgb(1, 7, 5);
+            text-decoration: none;
+           
+        }
+        .nav ul{
+            background-color: aqua;
+            height: 100%;
+        }
+        .nav a:hover{
+            border-left: solid 10px rgb(15, 5, 44);
+            background-color: rgb(223, 70, 141);
+        }
+
         .main{
             display: flex;
             width: 87%;
@@ -55,7 +72,7 @@
         .song_container{
             display: grid;
            grid-template-columns: 100%;
-           grid-template-rows: 100px 100px 500px;
+           grid-template-rows: 100px 80px 500px;
             background-color: darkblue;
             width: 87%;
             margin:0 0 0 200px;
@@ -70,7 +87,15 @@
             justify-content: space-evenly;
             background-color: aliceblue;
             height: 100%;
-
+           
+            
+        }
+        .song_button{
+            background-color: blueviolet;
+            border:solid 3px red;
+           width: 150px;
+           text-align: center;
+           padding: 10px;
         }
     
     </style>
@@ -78,7 +103,15 @@
     <body>
   <div class="container">
           <div class="nav">
-              nav
+             <ul >
+               
+                <li><a href="layer_2.html">Crew</a></li>
+                 <li><a href="#explore">Explore</a></li>
+                 <li><a href="#song">Songs</a></li>
+                 <li><a href="#movie">Movies</a></li>
+                 <li><a href="#anime">Anime</a></li>
+                 <li><a href="#more">More</a></li>
+             </ul>
           </div>
 
     <div class="main">
@@ -90,7 +123,7 @@
           </div>
      </div>
   </div>
-      <div class="explore_container">     
+      <div class="explore_container" id="explore">     
               <h1>Explore</h1>
           <div class="explore_container_items">
               Songs
@@ -108,19 +141,19 @@
             More
         </div>
       </div>
-      <div class="song_container">
+      <div class="song_container" id="song" >
          <div class="song_items">
-          header
+          <h1 style="text-align: center;font-size: 40px;">Songs</h1>
          </div>
 
            <div class="song_items">
 
             <div class="song_nav">
-             <div>Romantic</div>
-             <div>Old</div>
-             <div>Lofi</div>
-             <div>Party</div>
-             <div>English</div>
+             <div class="song_button">Romantic</div>
+             <div class="song_button">Old</div>
+             <div class="song_button">Lofi</div>
+             <div class="song_button">Party</div>
+             <div class="song_button"> English</div>
             </div>
 
            </div>
