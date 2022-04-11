@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width:device-width,initial-scale:1">
+      <style>
+          *{
+              box-sizing: border-box;
+          }
+         body{
+             margin: 0;
+             
+             background-color: brown;
+         } 
+          .nav a{
+              display: block;
+              background-color: aquamarine;
+              padding:20px 50px;
+              text-decoration: none;
+              text-align: left;
+             
+          }
+          .nav a:hover{
+              background-color: cornflowerblue;
+              font-size:30px;
+              border-left:solid 4px rgb(8, 0, 255);
+          }
+          .nav ul{
+              list-style-type:none;
+              width: 15%;
+              height: 800px;
+              position: fixed;
+              background-color: aquamarine;
+              margin:0;
+              padding:0;
+          }
+          .flex-container{
+              display:flex;
+              background-color: aqua;
+              position: relative;
+              left:15%;
+              width: 85%;
+              height: 100%;
+          }
+          #myimg{
+              flex:40%;
+              
+          }
+          #intro{
+              flex:60%;
+              background-color: aliceblue;
+          }
+          .explore{
+              display:flex;
+              position:relative;
+              left:15%;
+              width: 85%;
+              height: 250px;
+              padding:20px;
+              background-image:url('img/lay-2-bg.jpg');
+              background-size: cover;
+          }
+          .explore div{
+              background-color: antiquewhite;
+              width: 15%;
+              margin:5px;      
+          }
+          .songs{
+              display:flex;
+              flex-direction:column;
+              position:relative;
+              left:15%;
+              width: 85%;
+              padding:20px 0;
+              background-color: darkgoldenrod;
+              
+          }
+            .songs div{
+              background-color:transparent;
+              margin:10px;
+          }
+          .song_catg{
+              display:flex;
+              background-color: aliceblue;
+              height:200px;
+          }
+          .song_catg div{
+              background-color: aqua;
+              height:180px;
+             width: 200px;
+              font-size: 20px;
+          }
+      </style>
+    </head>
+    <body>
+         <div class="nav">
+              <ul>
+                  <li><img src="img/luffy.jpg" width="100%" height="140px"> </li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#crew">Crew</a></li>
+                  <li><a href="#explore">Explore</a></li>
+                  <li><a href="#songs">Songs</a></li>
+                  <li><a href="#movie">Movies</a></li>
+              </ul>
+         </div>
+
+         <div class="flex-container">
+             <div id="intro" id="about">
+               <h1 style="text-align: center;">I am Ashish Verma</h1>
+               <p><h3>Future goals</h3>
+                Well, I want to work in NASA, ISRO, DRDO etc. Simply I want to work in Scintific Field.
+                For example, I want to write,design,invate,bulid for Scientif Tools.<br>
+                Thus, wanted to become a Hacker, AIML scientist.
+                <h4>My Achievements</h4>
+                I already have steped feet in Hacking, 3D-models,animation, Web designing, Programming.
+                <h5>Some of my Works</h5>
+
+            </p>
+             </div>
+             <div id="myimg">
+                 <img src="img/horse.jpg" width="100%" height="100%">
+             </div>
+         </div>
+
+         <div class="explore">
+            <div style="width:130px;background-image: url(img/mountainsHD.jpg);background-size: cover;">
+               <h1 style="margin:50% 10px;">Explore</h1>              
+            </div>
+
+             <div style="background-image: url(img/Headphones.jpg);background-size: cover;">
+                 <h1 style="margin:40% 40px;">Songs</h1>  
+              </div>
+
+            <div>Movie</div>
+
+             <div>Anime</div>
+
+        </div>
+
+        <div class="songs">
+           <div> <h1>Songs</h1></div>
+
+           <div class="song_catg">
+               <div ><a href="https://open.spotify.com/embed/playlist/1PiywHuxPba9bD7StDJWst?utm_source=generator" target="_spotify">Love</a> </div> 
+               <div><a href="https://open.spotify.com/embed/playlist/5dAyq1CjLGtdGuNTNueXXb?utm_source=generator" target="_spotify">Rock</a></div>
+               <div><a  href="https://open.spotify.com/embed/playlist/5jdjinw75G2S260jI7efTM?utm_source=generator" target="_spotify">Lofi</a></div>
+               <div><a  href="https://open.spotify.com/embed/playlist/0YYqpcHx1TgsF4OcS05Lfv?utm_source=generator" target="_spotify">English</a></div>
+           </div>
+
+           <div id="spotify">
+               <iframe name="_spotify" style="width: 100%;height:380px;" ></iframe>
+           </div>
+        </div>
+       
+</html>
